@@ -9,7 +9,8 @@ class Company(models.Model):
     types = models.CharField(max_length=100,choices=
                             (('IT','IT'),
                              ('NON IT','NON IT'),
-                             ('MOBILE PHONE','MOBILE PHONE')
+                             ('MOBILE PHONE','MOBILE PHONE'),
+                             ('new', 'new'),
                              ))
     added_date = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
